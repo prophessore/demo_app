@@ -5,7 +5,7 @@ DemoApp::Application.routes.draw do
   match '/help',    to: 'static_pages#help', :as => :help, via: 'GET'
   match '/about_me',   to: 'static_pages#about_me', :as => :about , via: 'GET'
   match '/contact', to: 'static_pages#contact',:as => :contact, via: 'GET'
-  match '/signup',  to: 'users#new', :as => :signup,           via: 'get'
+  match '/signup',  to: 'users#new', :as => :signup, via: 'get'
   resources :microposts
 
   resources :users
